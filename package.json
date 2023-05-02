@@ -6,7 +6,9 @@
     "start": "parcel index.html --port 3000",
     "build": "parcel build index.html",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
